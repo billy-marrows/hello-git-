@@ -1,4 +1,7 @@
-# defaulto is worldo
-# Alexey the Ominous has written this code, his email is billymarrows@mail.ru
+require 'greeter'
+
+# Default is World
 name = ARGV.first || "World"
-puts "Hello,#{name}!"
+
+greeter = Greeter.new(name)
+puts greeter.greet
